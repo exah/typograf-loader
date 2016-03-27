@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Typograf loader for Webpack",
   "main": "index.js",
+  "scripts": {
+    "test": "webpack --config test/webpack.config.js"
+  },
   "keywords": [
     "typography",
     "preprocessing",
@@ -10,7 +13,16 @@
     "markdown"
   ],
   "author": "John Grishin",
-  "license": "GPL-3.0",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "devDependencies": {
+    "file-loader": "^0.8.5",
+    "webpack": "^1.12.14"
+  },
   "dependencies": {
     "typograf": "^5.2.0"
   }
