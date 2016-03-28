@@ -19,6 +19,10 @@
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:exah/typograf-loader.git"
+  },
   "devDependencies": {
     "file-loader": "^0.8.5",
     "webpack": "^1.12.14"
