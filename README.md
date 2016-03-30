@@ -33,15 +33,15 @@ loaders: [
 ```
 
 
-Or to processed markdown text:
+Or to process markdown texts:
 
 ```javascript
 loaders: [
   {
-    test: /ru\.html$/,
+    test: /ru\.md$/,
     loaders: [
-      'typograf?lang=ru&mode=name',
       'html',
+      'typograf?lang=ru&mode=name',
       'markdown'
     ]
   }
@@ -60,8 +60,8 @@ Full documentation can be found here: https://github.com/typograf/typograf
 
 Set text language.
 
-Type: `string`
-Default: `en`
+Type: `string` <br>
+Default: `en` <br>
 Options: `en` | `ru`
 
 
@@ -69,8 +69,8 @@ Options: `en` | `ru`
 
 Set output style.
 
-Type: `string`
-Default: `default`
+Type: `string` <br>
+Default: `default` <br>
 Options: `default` | `name` | `digit`
 
 - `default`: utf-8 symbols
@@ -82,22 +82,22 @@ Options: `default` | `name` | `digit`
 
 Enables rule.
 
-Type: `string` | `[ string, ... ]`
-Default: `[]`
+Type: `string` | `[ string, ... ]` <br>
+Default: `[]` <br>
 Options: `*` | [Rules](https://github.com/typograf/typograf/tree/dev/docs)
 
 ### disable
 
 Disables rule.
 
-Type: `string` | `[ string, ... ]`
-Default: `[]`
+Type: `string` | `[ string, ... ]` <br>
+Default: `[]` <br>
 Options: `*` | [Rules](https://github.com/typograf/typograf/tree/dev/docs)
 
 
 ### Examples
 
-Passing options with query parameters:
+Passing options as query string:
 
 ```javascript
 ...
